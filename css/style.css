@@ -70,3 +70,62 @@ figcaption {
 #details a:active {
   color: red;
 }
+
+/*////////// LAYOUT //////////*/
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  background: #eee;
+}
+
+.col-1 {
+  /* this column will span one-third */
+  float: left;
+  width: 32%;
+  background: #ccc;
+}
+ 
+.col-2 {
+  /* this column will span two-thirds */
+  float: left;
+  width: 66%;
+  background: #ccc;
+}
+ 
+.col-3 {
+  /* this column will span all the entire wrapper */
+  background: #ccc;
+}
+
+[class*="col-"] {
+  margin-left: 2%;
+}
+ 
+.first {
+  margin-left: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+img, video, audio {
+  max-width: 100%;
+}
+
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
